@@ -22,3 +22,13 @@ CREATE TABLE iris_cluster (
  create_timestamp TIMESTAMP NOT NULL DFAULT CURRENT_TIMESTAMP,
  primary key (id,data_version)
 );
+
+CREATE TABLE iris_output (
+ id serial NOT NULL,
+ sepal_length numeric NOT NULL,
+ sepal_width numeric NOT NULL,
+ petal_length numerci NOT NULL,
+ petal_width numerci NOT NULL
+ cluster_id numeric NOT NULL,
+ primary key (id)
+);

@@ -26,7 +26,7 @@ services:
    - "${SCRIPTS_SRC}:/opt/analysis"
   restart: always
   ports:
-   - "8888:8888" 
+   - "80:80" 
   networks:
    - mlnet
   depends_on:
